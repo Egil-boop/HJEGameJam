@@ -191,6 +191,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             state = MovementState.air;
+            
             if (desiredMoveSpeed < sprintSpeed)
             {
                 desiredMoveSpeed = walkSpeed;
@@ -231,7 +232,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-
+        
         if (Input.GetKey(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
@@ -266,10 +267,12 @@ public class PlayerMovement : MonoBehaviour
         readyToJump = true;
     }
 
+    
     private void MovePlayer()
     {
         if (activeGrapple)
         {
+            
             return;
         }
 

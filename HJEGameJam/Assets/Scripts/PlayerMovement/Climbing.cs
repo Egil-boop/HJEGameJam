@@ -39,6 +39,11 @@ public class Climbing : MonoBehaviour
     private RaycastHit frontWallHit;
     private bool wallFront;
 
+    public bool GetWallFront()
+    {
+        return wallFront;
+    }
+
     private Transform lastWall;
     private Vector3 lastWallNormal;
     public float minWallNormalAngleChange;
