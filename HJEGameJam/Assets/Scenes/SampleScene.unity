@@ -2420,6 +2420,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 330585546}
     - target: {fileID: 159895839, guid: ab63322c7ba9ae0459947c9fb81c102c, type: 3}
+      propertyPath: maxDashYSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 159895839, guid: ab63322c7ba9ae0459947c9fb81c102c, type: 3}
       propertyPath: dashUpwardForce
       value: 2
       objectReference: {fileID: 0}
