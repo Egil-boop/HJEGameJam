@@ -4050,6 +4050,11 @@ PrefabInstance:
       objectReference: {fileID: 234791203}
     - target: {fileID: 7919016082951561514, guid: ab63322c7ba9ae0459947c9fb81c102c,
         type: 3}
+      propertyPath: slideForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7919016082951561514, guid: ab63322c7ba9ae0459947c9fb81c102c,
+        type: 3}
       propertyPath: orientation
       value: 
       objectReference: {fileID: 1461860839}

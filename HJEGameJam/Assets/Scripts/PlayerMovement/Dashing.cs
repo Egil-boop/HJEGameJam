@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Dashing : MonoBehaviour
 {
+    public StatsHolder statsHolder;
+    
     [Header("References")]
     public Transform orientation;
     public Transform playerCam;
@@ -51,11 +53,13 @@ public class Dashing : MonoBehaviour
 
     private void Dash()
     {
-        if (dashCdTimer > 0) return;
-        else dashCdTimer = dashCd;
+        if (dashCdTimer > 0){ return;}
+        
+        
+        dashCdTimer = dashCd;
 
         pm.dashing = true;
-        pm.maxYSpeed = maxDashYSpeed;
+        pm.SetMaxYSpeed(maxDashYSpeed); 
 
         cam.DoFov(dashFov);
 
@@ -91,7 +95,7 @@ public class Dashing : MonoBehaviour
     private void ResetDash()
     {
         pm.dashing = false;
-        pm.maxYSpeed = 0;
+        pm.SetMaxYSpeed(0);
 
         cam.DoFov(85f);
 

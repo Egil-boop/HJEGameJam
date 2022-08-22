@@ -60,7 +60,7 @@ public class WallRunning : MonoBehaviour
     {
         CheckForWall();
         StateMachine();
-        if (pm.grounded)
+        if (pm.GetGrounded())
         {
             lastWall = null;
         }
